@@ -18,5 +18,7 @@ data class CharacterEntity(
     val location: String,
     val image: String,
     val episode: List<String>,
-    val url: String
-)
+    val url: String,
+    @ColumnInfo(name = "prev_key") var prevKey: Int?,
+    @ColumnInfo(name = "next_key") var nextKey: Int?
+    )
