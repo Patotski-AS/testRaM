@@ -2,7 +2,6 @@
 
 <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/card_item"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -19,23 +18,20 @@
         <ImageView
             android:id="@+id/iv_item_avatar"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="90"
+            android:layout_height="wrap_content"
             android:adjustViewBounds="true"
             android:contentDescription="@string/description_item_character_avatar"
             android:padding="4dp"
-            tools:srcCompat="@tools:sample/avatars" />
+            android:src="@mipmap/ic_randm" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="5">
+            android:layout_height="match_parent">
 
             <TextView
                 android:id="@+id/tv_value_name"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="Name"
                 android:textAlignment="center"
                 android:textAllCaps="true"
                 android:textSize="16sp"
@@ -48,7 +44,6 @@
                 android:id="@+id/tv_value_species"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="species"
                 app:layout_constraintEnd_toStartOf="@+id/tv_title_gender"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
@@ -58,7 +53,6 @@
                 android:id="@+id/tv_title_gender"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="gender"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toEndOf="@+id/tv_value_species"

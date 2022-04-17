@@ -18,5 +18,9 @@
         android:id="@+id/nav_character_info"
         android:name="com.example.android.testram.presentation.ui.character_info.CharacterInfoFragment"
         android:label="fragment_character_info"
-        tools:layout="@layout/fragment_character_info" />
+        tools:layout="@layout/fragment_character_info" >
+        <argument
+            android:name="character_info"
+            app:argType="com.example.android.testram.domain.model.CharacterInfo" />
+    </fragment>
 </navigation>

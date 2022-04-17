@@ -18,8 +18,18 @@
             android:layout_height="?attr/actionBarSize"
             android:background="?attr/colorPrimary"
             app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
-            app:popupTheme="@style/Theme.TestRaM.PopupOverlay"
-            app:subtitle="Name" />
+            app:popupTheme="@style/Theme.TestRaM.PopupOverlay">
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:text="Name"
+                android:textAllCaps="true"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </androidx.appcompat.widget.Toolbar>
 
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -37,9 +47,10 @@
                 android:id="@+id/iv_info_fragment_avatar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="4dp"
                 android:adjustViewBounds="true"
                 android:contentDescription="@string/description_character_big_avatar"
-                tools:src="@tools:sample/avatars" />
+                android:src="@mipmap/ic_randm" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -52,7 +63,7 @@
                     android:layout_marginStart="@dimen/margin_start_title_tv"
                     android:layout_marginTop="@dimen/margin_top_title_tv"
                     android:orientation="vertical"
-                    app:layout_constraintGuide_percent="0.4" />
+                    app:layout_constraintGuide_percent="0.3" />
 
                 <TextView
                     android:id="@+id/tv_title_name"
@@ -61,6 +72,7 @@
                     android:layout_marginStart="@dimen/margin_start_title_tv"
                     android:layout_marginTop="@dimen/margin_top_title_tv"
                     android:text="@string/tv_title_name"
+                    android:textStyle="bold"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -71,6 +83,7 @@
                     android:layout_marginStart="@dimen/margin_start_title_tv"
                     android:layout_marginTop="@dimen/margin_top_title_tv"
                     android:text="@string/tv_title_species"
+                    android:textStyle="bold"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/tv_value_name" />
 
@@ -81,6 +94,7 @@
                     android:layout_marginStart="@dimen/margin_start_title_tv"
                     android:layout_marginTop="@dimen/margin_top_title_tv"
                     android:text="@string/tv_title_gender"
+                    android:textStyle="bold"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/tv_value_species" />
 
@@ -91,6 +105,7 @@
                     android:layout_marginStart="@dimen/margin_start_title_tv"
                     android:layout_marginTop="@dimen/margin_top_title_tv"
                     android:text="@string/tv_title_status"
+                    android:textStyle="bold"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/tv_value_gender" />
 
@@ -101,6 +116,7 @@
                     android:layout_marginStart="@dimen/margin_start_title_tv"
                     android:layout_marginTop="@dimen/margin_top_title_tv"
                     android:text="@string/tv_title_location"
+                    android:textStyle="bold"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/tv_value_status" />
 
@@ -112,6 +128,7 @@
                     android:layout_marginTop="@dimen/margin_top_title_tv"
                     android:layout_marginBottom="8dp"
                     android:text="@string/tv_title_episode"
+                    android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/tv_value_location" />
