@@ -1,5 +1,6 @@
 package com.example.android.testram.data.db.dao
 
+import androidx.paging.PagingSource
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
@@ -12,12 +13,12 @@ interface CharacterDAO {
     suspend fun insert(movie: List<CharacterEntity>)
 
     @Query("SELECT * from characters WHERE id = :key")
-    suspend fun getCharacterById(key: Long): CharacterEntity?
+    suspend fun getCharacterById(key: Int): CharacterEntity?
 
     @Query("DELETE FROM characters")
     suspend fun clear()
 
     @Query("SELECT * FROM characters ")
-    fun getAllCharacters(): List<CharacterEntity>
+    fun getAllCharacters(): PagingSource<Int, CharacterEntity>
 
 }
