@@ -4,10 +4,15 @@
     <string name="description_item_character_avatar">Character\'s avatar</string>
     <string name="description_character_big_avatar">Character\'s big avatar</string>
 <!--    title-->
-    <string name="tv_title_name">Name</string>
-    <string name="tv_title_species">Species</string>
-    <string name="tv_title_gender">Gender</string>
-    <string name="tv_title_status">Status</string>
-    <string name="tv_title_location">Location</string>
-    <string name="tv_title_episode">Episode</string>
+    <string name="tv_title_name">Name:</string>
+    <string name="tv_title_species">Species:</string>
+    <string name="tv_title_gender">Gender:</string>
+    <string name="tv_title_status">Status:</string>
+    <string name="tv_title_location">Location:</string>
+    <string name="tv_title_episode">Episode:</string>
+    <string name="text_retry_button">Retry</string>
+    <!--    error message-->
+    <string name="message_http_error">n unexpected error occurred</string>
+    <string name="message_internet_connecton_error">😨 Wooops!!! No internet connection</string>
+    <string name="tv_error_message_text">No internet connection. \n Swipe to refresh</string>
 </resources>

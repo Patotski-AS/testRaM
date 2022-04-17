@@ -7,7 +7,7 @@ import androidx.room.PrimaryKey
 @Entity(tableName = "characters")
 data class CharacterEntity(
     @PrimaryKey(autoGenerate = true)
-    @ColumnInfo(name = "id_db") val idDb: Long = 0L,
+    @ColumnInfo(name = "id_db") val idDb: Int = 0,
     val id: Int,
     val name: String,
     val status: String,
@@ -18,5 +18,7 @@ data class CharacterEntity(
     val location: String,
     val image: String,
     val episode: List<String>,
-    val url: String
-)
+    val url: String,
+    @ColumnInfo(name = "prev_key") var prevKey: Int?,
+    @ColumnInfo(name = "next_key") var nextKey: Int?
+    )
