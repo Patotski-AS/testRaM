@@ -1,4 +1,4 @@
-package com.example.android.testram
+package com.example.testram
 
 import org.junit.Test
 
